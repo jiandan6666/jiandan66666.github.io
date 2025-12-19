@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>谭玲玲个人博客</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <nav class="main-nav">
+            <div class="nav-container">
+                <div class="logo">谭玲玲个人空间</div>
+                <ul class="nav-links">
+                    <li><a href="#hero" class="active">首页</a></li>
+                    <li><a href="#hobbies">我的爱好</a></li>
+                    <li><a href="#gallery">我的旅行相册</a></li>
+                    <li><a href="#message">留言</a></li>
+                    <li><a href="#login">登录</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 音频控制 -->
+    <div class="audio-control">
+        <button id="audio-toggle" class="audio-btn">
+            <i class="fas fa-volume-up"></i>
+        </button>
+    </div>
+
+    <div class="main-content">
+        <!-- 英雄区域 -->
+        <section id="hero">
+            <audio id="background-music" loop autoplay>
+                <source src="assets/music.mp3" type="audio/mpeg">
+                您的浏览器不支持音频元素。
+            </audio>
+            <div class="hero-content">
+                <h1>Welcome to my personal blog</h1>
+                <a href="#about" class="btn">了解更多我</a>
+            </div>
+        </section>
+
+        <!-- 个人简介 -->
+        <section id="about">
+            <div class="about-container">
+                <div class="about-avatar">
+                    <img src="assets/profile.jpg" alt="个人头像" class="viewable-image">
+                </div>
+                <div class="about-content">
+                    <h2>个人简介</h2>
+                    <p>个人爱好:看电影 动漫 游泳 吃肉 旅行</p>
+                    <p>喜欢的电影:<《罗小黑战记》><《灵笼》></p>
+                    <p>人生格言:没有人会因为你的平庸而嘲笑你,也没有人会因为你的平庸而停止生活。</p>
+                    <p>人生理想:成为一名大大的富翁环游世界</p>
+                    <p>喜欢的书籍:《可能性的艺术》《寻找百忧解》《法律的悖论》《稻草人》《活着》、《置身事内》、《五千年历史》</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 兴趣爱好 -->
+        <section id="hobbies">
+            <h2>兴趣爱好:旅行</h2>
+            <div class="hobby-container">
+                <div class="hobby-content">
+                    <p>旅行，是我生活中最热爱的事情之一。它不仅能让我领略到不同地方的自然风光，还能让我了解到各种不同的文化和生活方式。每一次旅行，都是一次心灵的洗礼和眼界的开阔。</p>
+                    <p>我喜欢探索那些隐藏在世界角落的美丽景点，无论是壮丽的山川湖海，还是充满历史韵味的古城小镇，都让我流连忘返。旅行中，我会尝试当地的美食，体验当地的生活，与当地人交流，这些都成为了我人生中宝贵的回忆。</p>
+                    <p>旅行教会了我很多东西，它让我学会了独立，学会了适应不同的环境，学会了欣赏生活中的美好。我相信，世界这么大，我要继续走下去，去发现更多的精彩。</p>
+                </div>
+                <div class="hobby-image">
+                    <img src="assets/travel.jpg" alt="旅行" class="viewable-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- 我的朋友们 -->
+        <section id="life">
+            <h2>我的朋友们</h2>
+            <div class="friends-container">
+                <div class="friend-item">
+                    <img src="assets/friend1.jpg" alt="朋友1" class="viewable-image">
+                    <p>高中</p>
+                </div>
+                <div class="friend-item">
+                    <img src="assets/friend2.jpg" alt="朋友2" class="viewable-image">
+                    <p>演唱会</p>
+                </div>
+                <div class="friend-item">
+                    <img src="assets/friend3.jpg" alt="朋友3" class="viewable-image">
+                    <p>摆摊</p>
+                </div>
+                <div class="friend-item">
+                    <img src="assets/friend4.jpg" alt="朋友4" class="viewable-image">
+                    <p>聚餐</p>
+                </div>
+                <div class="friend-item">
+                    <img src="assets/friend5.jpg" alt="朋友5" class="viewable-image">
+                    <p>过生日</p>
+                </div>
+                <div class="friend-item">
+                    <img src="assets/friend6.jpg" alt="朋友6" class="viewable-image">
+                    <p>教室</p>
+                </div>
+                <div class="friend-item">
+                    <img src="assets/friend7.jpg" alt="朋友7" class="viewable-image">
+                    <p>避暑</p>
+                </div>
+                <div class="friend-item">
+                    <img src="assets/friend8.jpg" alt="朋友8" class="viewable-image">
+                    <p>宝宝</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 图片画廊 -->
+        <section id="gallery">
+            <h2>我的旅行相册</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/luxing1.jpg" alt="旅行照片1" class="viewable-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/luxing2.jpg" alt="旅行照片2" class="viewable-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/luxing3.jpg" alt="旅行照片3" class="viewable-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/luxing4.jpg" alt="旅行照片4" class="viewable-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/luxing5.jpg" alt="旅行照片5" class="viewable-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/luxing6.jpg" alt="旅行照片6" class="viewable-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/luxing7.jpg" alt="旅行照片7" class="viewable-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/luxing8.jpg" alt="旅行照片8" class="viewable-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- 留言板 -->
+        <section id="message">
+            <h2>留言板</h2>
+            <div class="message-container">
+                <form id="message-form" class="message-form">
+                    <div class="form-group">
+                        <label for="name">姓名：</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">邮箱：</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="content">留言内容：</label>
+                        <textarea id="content" name="content" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">提交留言</button>
+                </form>
+                
+                <div id="messages-list" class="messages-list">
+                    <h3>留言列表</h3>
+                    <div id="messages" class="messages"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 登录区域 -->
+        <section id="login">
+            <h2>登录</h2>
+            <div class="login-container">
+                <form id="friend-form" class="friend-form">
+                    <div class="form-group">
+                        <label for="name">姓名：</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="compliment">夸谭玲玲的句子：</label>
+                        <input type="text" id="compliment" name="compliment" required>
+                    </div>
+                    <button type="submit" class="btn">成为好朋友</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="footer-content">
+            <p>个人博客</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <!-- 图片查看器 -->
+    <div id="image-viewer" class="image-viewer">
+        <div class="viewer-overlay"></div>
+        <div class="viewer-content">
+            <button class="close-btn">&times;</button>
+            <img id="viewer-image" src="" alt="查看图片">
+        </div>
+    </div>
+</body>
+</html>
