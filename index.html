@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>经典电视剧投票系统</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="bgAudio" autoplay loop>
+        <source src="./图片/标准录音 22.mp3" type="audio/mpeg">
+        您的浏览器不支持音频播放。
+    </audio>
+    <div class="container">
+        <!-- 页面标题 -->
+        <header class="header">
+            <div class="header-content">
+                <div class="header-text">
+                    <h1>经典电视剧投票系统</h1>
+                    <p>为你喜爱的经典电视剧投票，见证时代的记忆</p>
+                </div>
+                <button id="audioToggleBtn" class="audio-toggle-btn">
+                    <span id="audioIcon">🔊</span>
+                    <span id="audioText">暂停音乐</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- 年代筛选 -->
+        <div class="filter-container">
+            <h2>年代筛选</h2>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="搜索电视剧..." class="search-input">
+                <button id="searchBtn" class="search-btn">搜索</button>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-decade="all">全部</button>
+                <button class="filter-btn" data-decade="80">80年代</button>
+                <button class="filter-btn" data-decade="90">90年代</button>
+                <button class="filter-btn" data-decade="2000">2000年代</button>
+            </div>
+        </div>
+
+        <!-- 电视剧卡片展示 -->
+        <section class="tv-shows-container">
+            <div class="section-header">
+                <h2>经典电视剧</h2>
+                <button class="add-show-btn" id="addShowBtn">+ 添加电视剧</button>
+            </div>
+            <div class="tv-shows-grid" id="tvShowsGrid">
+                <!-- 电视剧卡片将通过JavaScript动态生成 -->
+            </div>
+        </section>
+
+        <!-- 排行榜 -->
+        <section class="leaderboard">
+            <h2>投票排行榜</h2>
+            <div class="leaderboard-list" id="leaderboardList">
+                <!-- 排行榜将通过JavaScript动态生成 -->
+            </div>
+        </section>
+
+        <!-- 票数统计表 -->
+        <section class="statistics">
+            <h2>票数统计</h2>
+            <div class="statistics-content" id="statisticsContent">
+                <!-- 统计数据将通过JavaScript动态生成 -->
+            </div>
+        </section>
+    </div>
+
+    <!-- 添加电视剧模态框 -->
+    <div class="modal" id="addShowModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>添加经典电视剧</h2>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <form class="add-show-form" id="addShowForm">
+                <div class="form-group">
+                    <label for="showName">剧名 *</label>
+                    <input type="text" id="showName" name="showName" required placeholder="请输入电视剧名称">
+                </div>
+                <div class="form-group">
+                    <label for="showYear">年代 *</label>
+                    <input type="number" id="showYear" name="showYear" required min="1950" max="2025" placeholder="请输入年份">
+                </div>
+                <div class="form-group">
+                    <label for="showActors">主演 *</label>
+                    <input type="text" id="showActors" name="showActors" required placeholder="请输入主演姓名，用逗号分隔">
+                </div>
+                <div class="form-group">
+                    <label for="showPoster">海报URL</label>
+                    <input type="url" id="showPoster" name="showPoster" placeholder="请输入海报图片URL（可选）">
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-cancel" id="btnCancel">取消</button>
+                    <button type="submit" class="btn btn-submit">确认添加</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- 评论模态框 -->
+    <div class="modal" id="commentsModal">
+        <div class="modal-content comments-modal-content">
+            <div class="modal-header">
+                <h2 id="commentsTitle">电视剧评论</h2>
+                <button class="modal-close" id="commentsModalClose">&times;</button>
+            </div>
+            <div class="comments-container">
+                <div class="comments-list" id="commentsList">
+                    <!-- 评论列表将通过JavaScript动态生成 -->
+                </div>
+                <div class="add-comment-form">
+                    <div class="form-group">
+                        <textarea id="commentText" placeholder="添加您的评论..." rows="3"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-submit" id="submitCommentBtn">发表评论</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
